@@ -22,24 +22,24 @@ Exclusão de Empresas e Clientes
 [x] Criação do seeder User
 
 [x] Controller Companies
-    [x] Company Controller
+[x] Company Controller
 [x] Request Company
-    [x] Criação da empresa
+[x] Criação da empresa
 [x] Resource Company
-    [x] Listagem das empresas
-    [x] Dados da empresa
-    [x] Criação da empresa
-    [x] Atualização da empresa
-    [x] Exclução da empresa
+[x] Listagem das empresas
+[x] Dados da empresa
+[x] Criação da empresa
+[x] Atualização da empresa
+[x] Exclução da empresa
 
 [x] Controller Users
-    [] User Controller
+[] User Controller
 [x] Request User
-    [] Criação do cliente  
+[] Criação do cliente  
 [x] Resource User
-    [] Listagem dos clientes
-    [] Dados do cliente
-    [] Criação do cliente
-    [] Atualização do cliente
-    [] Exclução do cliente
-    [] Incrementar a uma empresa
+[] Listagem dos clientes
+[] Dados do cliente
+[] Criação do cliente
+[] Atualização do cliente
+[] Exclução do cliente
+[] Incrementar a uma empresa
