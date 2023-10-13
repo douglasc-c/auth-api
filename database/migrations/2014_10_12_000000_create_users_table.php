@@ -15,7 +15,7 @@ return new class extends Migration
             $table->uuid('id')->primary();
             $table->string('name');
             $table->string('code')->unique();
-            $table->enum('type', ['PF', ' PJ'])->default('PF');
+            $table->enum('type', ['PF', 'PJ']);
             $table->string('document')->unique();
             $table->string('social_reason')->nullable();
             $table->string('company')->nullable();

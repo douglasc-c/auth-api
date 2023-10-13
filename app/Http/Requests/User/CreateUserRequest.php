@@ -26,7 +26,7 @@ class CreateUserRequest extends FormRequest
             'type' => ['required', 'string', 'max:255'],
             'document' => ['required', 'string', 'max:255', 'unique:users,document'],
             'social_reason' => ['required', 'string', 'max:255', 'unique:users,social_reason'],
-            'company' => ['required', 'exists:companies,code'],
+            'company' => 'exists:companies,code',
         ];
     }
 
@@ -42,9 +42,6 @@ class CreateUserRequest extends FormRequest
             'type.required' => 'O tipo de conta é obrigatório',
             'document.unique' => 'Este documento já está em uso',
             'document.required' => 'Documento é obrigatório',
-            'social_reason.unique' => 'Esta razão social já está em uso',
-            'social_reason.required' => 'Razão social é obrigatória',
-            'company.required' => 'A empresa é obrigatória',
             'company.exists' => 'A empresa selecionada não foi encontrada na tabela de empresas',
         ];
     }

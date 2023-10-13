@@ -10,13 +10,19 @@ use Illuminate\Http\Request;
 
 class CompanyController extends Controller
 {
+    /**
+     * Delete a company
+     *
+     * @param string $id
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function delete($id)
     {
         CompanyResource::delete($id);
 
         return response()->json([
             'status'  => true,
-            'message' => 'A empresa foi deletada com sucesso',
+            'message' => 'A empresa foi deletada com sucesso.',
         ]);
     }
 
@@ -41,7 +47,7 @@ class CompanyController extends Controller
 
             return response()->json([
                 'status'  => true,
-                'message' => 'A empresa foi atualizada com sucesso',
+                'message' => 'A empresa foi atualizada com sucesso.',
                 'company' => $company,
             ]);
         } catch (\Exception $e) {
@@ -65,7 +71,7 @@ class CompanyController extends Controller
 
             return response()->json([
                 'status'  => true,
-                'message' => 'A empresa foi criada com sucesso',
+                'message' => 'A empresa foi criada com sucesso.',
                 'company' => $company,
             ]);
         } catch (\Exception $e) {
