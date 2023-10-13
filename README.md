@@ -29,13 +29,13 @@ Exclusão de Empresas e Clientes
     - [x] Atualização da empresa
     - [x] Exclução da empresa
 - [x] Controller Users
-    -[ ] User Controller
+    - [ ] User Controller
 - [x] Request User
-    -[ ] Criação do cliente  
+    - [ ] Criação do cliente  
 - [x] Resource User
-    -[ ] Listagem dos clientes
-    -[ ] Dados do cliente
-    -[ ] Criação do cliente
-    -[ ] Atualização do cliente
-    -[ ] Exclução do cliente
-    -[ ] Incrementar a uma empresa
+    - [ ] Listagem dos clientes
+    - [ ] Dados do cliente
+    - [ ] Criação do cliente
+    - [ ] Atualização do cliente
+    - [ ] Exclução do cliente
+    - [ ] Incrementar a uma empresa
