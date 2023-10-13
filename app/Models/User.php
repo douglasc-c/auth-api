@@ -4,6 +4,7 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 
+use App\Helpers\CodeHelper;
 use App\Helpers\UuidHelper;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -31,6 +32,11 @@ class User extends Authenticatable
     ];
 
     /**
+     * The attributes set to false
+     */
+    public $incrementing = false;
+
+    /**
      * boot of mode
      */
     public static function boot()
@@ -38,11 +44,12 @@ class User extends Authenticatable
         parent::boot();
         static::creating(function ($model) {
             $model->id = UuidHelper::generate($model);
+            $model->code = CodeHelper::generate($model);
         });
     }
 
     /**
-     * Get the User
+     * Get the user
      *
      * @return User
      */

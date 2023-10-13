@@ -13,7 +13,7 @@ class UuidHelper
     {
         do {
             $uuid = (string) UuidHelper::generateNewUuid();
-        } while ($model->where('uuid', $uuid)->exists());
+        } while ($model->where('id', $uuid)->exists());
 
         return $uuid;
     }

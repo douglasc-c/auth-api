@@ -2,9 +2,10 @@
 
 namespace App\Models;
 
+use App\Helpers\CodeHelper;
+use App\Helpers\UuidHelper;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Helpers\UuidHelper;
 
 class Company extends Model
 {
@@ -31,6 +32,11 @@ class Company extends Model
     ];
 
     /**
+     * The attributes set to false
+     */
+    public $incrementing = false;
+
+    /**
      * boot of mode
      */
     public static function boot()
@@ -38,6 +44,7 @@ class Company extends Model
         parent::boot();
         static::creating(function ($model) {
             $model->id = UuidHelper::generate($model);
+            $model->code = CodeHelper::generate($model);
         });
     }
 }
