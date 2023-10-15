@@ -12,11 +12,14 @@ Exclusão de Empresas e Clientes
 
 ## Bibliotecas
 - [UUID Ramsey](https://github.com/ramsey/uuid).
+- [Vue Route](https://router.vuejs.org).
+- [Tailwind](https://tailwindcss.com).
+- [Postcss](https://postcss.org).
 
 ## Documentações
 - [Documentação da API](https://documenter.getpostman.com/view/9111037/2s9YR56uYM)
 
-## Check list API
+## Check list backend
 - [x] Criação da tabela Companies
 - [x] Criação da tabela Users
 - [x] Criação do seeder Company
@@ -36,6 +39,7 @@ Exclusão de Empresas e Clientes
     - [x] User Controller
 - [x] Request User
     - [x] Criação do cliente  
+    - [x] Atualização dos dados do cliente
 - [x] Resource User
     - [x] Listagem dos clientes
     - [x] Dados do cliente
@@ -43,3 +47,17 @@ Exclusão de Empresas e Clientes
     - [x] Atualização do cliente
     - [x] Exclução do cliente
 
+## Check list frontend
+- [x] Rotas dos componentes
+- [x] Componentes
+    - [x] App
+    - [] Adicionar empresa
+    - [] Remover empresa
+    - [x] Tabela das empresas
+    - [x] Detalhes da empresa
+        -[x] Atualizar empresa
+    - [] Adicionar cliente
+    - [] Remover cliente
+    - [x] Tabela de clientes
+    - [x] Detalhes do cliente
+        -[x] Atualizar cliente

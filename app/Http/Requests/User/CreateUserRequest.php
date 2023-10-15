@@ -25,7 +25,7 @@ class CreateUserRequest extends FormRequest
             'name' => ['required', 'string', 'max:255'],
             'type' => ['required', 'string', 'max:255'],
             'document' => ['required', 'string', 'max:255', 'unique:users,document'],
-            'social_reason' => ['required', 'string', 'max:255', 'unique:users,social_reason'],
+            'social_reason' => ['required', 'string', 'max:255'],
             'company' => 'exists:companies,code',
         ];
     }

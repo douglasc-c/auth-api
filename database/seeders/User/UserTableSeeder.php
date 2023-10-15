@@ -18,7 +18,7 @@ class UserTableSeeder extends Seeder
 
         User::create([
             'name' => 'Cliente Eloca',
-            'type' => 'PF',
+            'type' => 'CPF',
             'document' => '000.000.000-00',
             'social_reason' => 'Eloca LTDA',
             'company' => $company->code

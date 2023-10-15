@@ -37,9 +37,9 @@ class UserController extends Controller
     public function update(UpdateUserRequest $request, $id)
     {
         try {
-            $company = UserResource::update($request->all(), $id);
+            $user = UserResource::update($request->all(), $id);
 
-            if (!$company) {
+            if (!$user) {
                 return response()->json([
                     'status'  => true,
                     'message' => 'O cliente não foi localizada.',
@@ -49,8 +49,9 @@ class UserController extends Controller
             return response()->json([
                 'status'  => true,
                 'message' => 'O cliente foi atualizado com sucesso.',
-                'company' => $company,
+                'user' => $user,
             ]);
+
         } catch (\Exception $e) {
             return response()->json([
                 'status' => false,
@@ -92,9 +93,9 @@ class UserController extends Controller
     public function get($id)
     {
         try {
-            $company = UserResource::get($id);
+            $user = UserResource::get($id);
 
-            if (!$company) {
+            if (!$user) {
                 return response()->json([
                     'status'  => true,
                     'message' => 'O cliente não foi localizado.',
@@ -103,7 +104,7 @@ class UserController extends Controller
 
             return response()->json([
                 'status'  => true,
-                'company' => $company,
+                'user' => $user,
             ]);
         } catch (\Exception $e) {
             return response()->json([
