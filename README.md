@@ -71,7 +71,6 @@ Exclusão de Empresas e Clientes
 Inicie os Contêineres
 ``` 
 docker-compose build laravel
-docker-compose up -d
 ```
     
 Inicie os contêineres:
