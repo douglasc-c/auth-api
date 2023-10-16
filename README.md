@@ -75,10 +75,10 @@ docker-compose build laravel
     
 Inicie os contêineres:
 ``` 
-docker-compose up -d
+./vendor/bin/sail up -d
 ```
 
 Rode o projeto:
 ``` 
-sail npm run dev
+./vendor/bin/sail npm run dev
 ```
