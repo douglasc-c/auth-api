@@ -20,7 +20,7 @@ class UserTableSeeder extends Seeder
             'name' => 'Cliente Eloca',
             'type' => 'CPF',
             'document' => '000.000.000-00',
-            'social_reason' => 'Eloca LTDA',
+            'social_reason' => 'Cliente Eloca LTDA',
             'company' => $company->code
         ]);
     }

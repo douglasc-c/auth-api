@@ -12,9 +12,11 @@ Exclusão de Empresas e Clientes
 
 ## Bibliotecas
 - [UUID Ramsey](https://github.com/ramsey/uuid).
+- [Vue](https://vuejs.org).
 - [Vue Route](https://router.vuejs.org).
-- [Tailwind](https://tailwindcss.com).
+- [TailwindCSS](https://tailwindcss.com).
 - [Postcss](https://postcss.org).
+- [Vue The Mask](https://github.com/vuejs-tips/vue-the-mask).
 
 ## Documentações
 - [Documentação da API](https://documenter.getpostman.com/view/9111037/2s9YR56uYM)
@@ -51,13 +53,13 @@ Exclusão de Empresas e Clientes
 - [x] Rotas dos componentes
 - [x] Componentes
     - [x] App
-    - [] Adicionar empresa
-    - [] Remover empresa
+    - [x] Adicionar empresa
+    - [x] Remover empresa
     - [x] Tabela das empresas
     - [x] Detalhes da empresa
-        -[x] Atualizar empresa
-    - [] Adicionar cliente
-    - [] Remover cliente
+        - [x] Atualizar empresa
+    - [x] Adicionar cliente
+    - [x] Remover cliente
     - [x] Tabela de clientes
     - [x] Detalhes do cliente
-        -[x] Atualizar cliente
+        - [x] Atualizar cliente

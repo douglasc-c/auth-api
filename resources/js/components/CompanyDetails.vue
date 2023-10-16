@@ -98,7 +98,6 @@ export default {
                     }
                 })
                 .then(data => {
-                    console.log(data)
                 })
                 .catch(error => {
                     console.error('Erro ao atualizar a empresa:', error);

@@ -21,7 +21,7 @@
             </div>
 
             <div class="mb-2 flex space-x-2">
-                <p class="font-bold self-center">Tipo de document:</p>
+                <p class="font-bold self-center">Tipo de documento:</p>
                 <p @click="editField('type')" v-if="!editing.type">{{ user.type }}</p>
                 <div class="flex space-x-2">
                     <select v-model="user.type" id="type" v-if="editing.type"
@@ -132,7 +132,7 @@ export default {
                     }
                 })
                 .then(data => {
-                    console.log(data)
+
                 })
                 .catch(error => {
                     console.error('Erro ao atualizar usuário:', error);
