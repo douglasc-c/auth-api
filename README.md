@@ -66,7 +66,7 @@ Exclusão de Empresas e Clientes
 
 
 ## Build do projeto
-1. Execute os seguintes comandos na raiz do projeto:
+Execute os seguintes comandos na raiz do projeto:
 
 Inicie os Contêineres:
 ``` 
