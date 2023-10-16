@@ -63,3 +63,23 @@ Exclusão de Empresas e Clientes
     - [x] Tabela de clientes
     - [x] Detalhes do cliente
         - [x] Atualizar cliente
+
+
+## Build do projeto
+1. Execute os seguintes comandos na raiz do projeto:
+
+Inicie os Contêineres
+``` 
+docker-compose build laravel
+docker-compose up -d
+```
+    
+Inicie os contêineres:
+``` 
+docker-compose up -d
+```
+
+Rode o projeto:
+``` 
+sail npm run dev
+```
